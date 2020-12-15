@@ -71,6 +71,9 @@
 .welcome {
     color: #fff;
     background-color: var(--primary-color);
+    position: relative;
+    align-content: center;
+    min-height: 400px;
 }
 
 /* Contact Form */
@@ -128,9 +131,25 @@
 
 .contact::before, 
 .contact::after {
+    content: "";
     position: absolute;
     height: 100px;
     bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+.welcome::before,
+.welcome::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -50px;
     right: 0;
     left: 0;
     background-color: #fff;
@@ -220,10 +239,7 @@
 /* Tablets and under */
 @media (max-width: 768px) {
     .grid,
-    .contact .grid,
-    .stats .grid,
-    .cli .grid,
-    .cloud .grid {
+    .contact .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -239,11 +255,6 @@
 
     .contact-form {
         justify-self: center;
-    }
-
-    .cli .grid > *:first-child {
-        grid-column: 1;
-        grid-row: 1;
     }
 
     .imagesGallery .grid {
