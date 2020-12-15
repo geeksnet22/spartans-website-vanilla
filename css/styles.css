@@ -48,6 +48,8 @@
      background-color: var(--primary-color);
      color: #fff;
      height: 70px;
+     position: sticky;
+     top: 0;
  }
 
 .navbar ul {
@@ -212,24 +214,12 @@
     margin: auto;
 }
 
-.sticky.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 .footer .social a {
     margin: 0 10px;
 }
 
-.gallery-footer {
-    margin-top: 200px;
-}
-
-.home-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.footer {
+    margin-top: clamp(220px, 100px, 400px);
 }
 
 /* Tablets and under */
@@ -264,18 +254,6 @@
     #nextImage {
         right: 10px;
     }
-
-    /* Footer */
-    .gallery-footer {
-        position: relative;
-        margin-top: 200px;
-    }
-
-    .home-footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
 }
 
 /* Mobile */
@@ -304,15 +282,5 @@
 
     .welcome {
         text-align: center;
-    }
-
-    .home-footer {
-        position: relative;
-        margin-top: 200px;
-    }
-
-    .contact-footer {
-        position: relative;
-        margin-top: 400px;
     }
 }
