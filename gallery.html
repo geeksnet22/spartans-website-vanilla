@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+    font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR
+    5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNy
+    eRssA==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <script src="js/galleryHandler.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Saskatoon Spartans Cricket Club</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Saskatoon Spartans</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Images Grid -->
+    <section class="imagesGallery my-2">
+        <div class="grid">
+            <img src="images/team_photos/1.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/2.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/3.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/4.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/5.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/6.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/8.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/9.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/10.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/11.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/12.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/13.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/14.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/15.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/16.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/17.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/18.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/19.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/20.jpeg" alt="" onclick="handleClick(this)">
+            <img src="images/team_photos/21.jpeg" alt="" onclick="handleClick(this)">
+        </div>
+    </section>
+
+    <section class="imagePopupContainer">
+        <img id="closePopup" src="images/logos/close.png" alt="" onclick="closePopup()">
+        <img id="prevImage" src="images/logos/prev.png" alt="" onclick="prevImage()">
+        <img id="nextImage" src="images/logos/next.png" alt="" onclick="nextImage()">
+        <img id="imagePopup" src="images/team_photos/1.jpeg" alt="">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-1">
+        <section class="sponsors">
+            <h2 class="md text-center my-1">
+                Our Sponsors
+            </h2>
+            <div class="container flex">
+                <div class="card">
+                    <h4>Bombay Spices</h4>
+                </div>
+                <div class="card">
+                    <h4>Pizza Pirates</h4>
+                </div>
+                <div class="card">
+                    <h4>Mr. Lube</h4>
+                </div>
+                <div class="card">
+                    <h4>Urban Spice</h4>
+                </div>
+            </div>
+        </section>
+        </div>
+    </footer>
+</body>
+</html>
