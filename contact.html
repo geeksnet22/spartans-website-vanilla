@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/utilities.css">
+    <script src="js/contactHandler.js"></script>
     <title>Saskatoon Spartans Cricket Club</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
             </div>
             <div class="contact-form card">
                 <h2>Contact Us</h2>
-                <form>
+                <form onsubmit="sendEmail()">
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
